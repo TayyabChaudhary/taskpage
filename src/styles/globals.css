@@ -18,10 +18,85 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+}
+
+.whatsapp__btn {
+  background-image: linear-gradient(129.09deg, #F95080 13.47%, #635BDC 88.23%);
+}
+
+.whatsapp__btn2 {
+  background: linear-gradient(93.57deg, #EF3A33 16.56%, #FED03C 91.12%);
+}
+
+.whatsapp__btn3 {
+  background: linear-gradient(145.4deg, #00FF4F -29.84%, #04586F 100.45%);
+}
+
+.youtube {
+  background: linear-gradient(to right, #F95080 0%, #635BDC);
+  opacity: 80%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.image {
+  background: linear-gradient(to right, #EF3A33 0%, #FED03C);
+  opacity: 80%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.voice {
+  background: linear-gradient(to right, #00FF4F 0%, #04586F 100%);
+  opacity: 80%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.swiper-button-next {
+  width: 68px !important;
+  border-radius: 50px;
+  background-image: url('../assets/images/others/arrow_back.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 48px;
+  border: 1px solid #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+
+.swiper-button-prev {
+  width: 68px !important;
+  border-radius: 50px;
+  height: 48px;
+  background-image: url('../assets/images/others/arrow_back1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 48px;
+  border: 1px solid #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.swiper-button-prev::after {
+  display: none;
 }
