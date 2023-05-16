@@ -13,16 +13,16 @@ import firstImage from "../../assets/images/others/first.png";
 import iPhoneImage from "../../assets/images/others/Blue.png";
 import ThirdImage from "../../assets/images/others/third.png";
 import YoutubeLogo from "../../assets/images/others/youtube.png";
-import LineVerticalImage from "../../assets/images/others/2.png"
+import LineVerticalImage from "../../assets/images/others/2.png";
 import Lines from "@/assets/images/icons/Lines";
 import Head from "next/head";
+import { assets } from "../../assets";
 export default function HomePage() {
   return (
     <React.StrictMode>
-
-        <Head>
-            <title>Task Page</title>
-        </Head>
+      <Head>
+        <title>Task Page</title>
+      </Head>
 
       <section className="container mx-auto max-w-screen-lg z-[200] h-96">
         <Swiper
@@ -36,18 +36,26 @@ export default function HomePage() {
         >
           <SwiperSlide>
             <div className="flex flex-col items-center gap-3 pt-20">
-                <div className="absolute top-64 left-32">
-                    <Lines />
-                </div>
-                <div className="absolute top-72 right-56">
-                    <Image src={YoutubeLogo} alt="" />
-                </div>
-                <div className="absolute top-20 right-16">
-                    <Image src={LineVerticalImage} alt="" />
-                </div>
-              <h1 className="text-5xl font-extrabold">Summarize
-              <span className="youtube"> Youtube </span>
-                Video</h1>
+              <div className="absolute top-96 -z-10">
+                <div className="first__linear__gradient w-[680px] h-[213px] rounded-full"></div>
+              </div>
+              <div className="absolute top-96 -z-20">
+                <div className="circle__iamge bg-center bg-cover w-[682px] h-[407px]"></div>
+              </div>
+              <div className="absolute top-64 left-32">
+                <Lines />
+              </div>
+              <div className="absolute top-72 right-56">
+                <Image src={assets.youtube} alt="" />
+              </div>
+              <div className="absolute top-20 right-16">
+                <Image src={LineVerticalImage} alt="" />
+              </div>
+              <h1 className="text-5xl font-extrabold">
+                Summarize
+                <span className="youtube"> Youtube </span>
+                Video
+              </h1>
               <p className="text-gray200 text-base">
                 Send a video and transform to short text
               </p>
@@ -61,7 +69,7 @@ export default function HomePage() {
                   <Image src={firstImage} alt="" />
                 </div>
                 <div>
-                  <Image src={iPhoneImage} alt="" />
+                  <Image src={iPhoneImage} alt=""  />
                 </div>
                 <div>
                   <Image src={ThirdImage} alt="" />
@@ -71,18 +79,26 @@ export default function HomePage() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-center gap-3 pt-20">
-                <div className="absolute top-64 left-32">
-                    <Lines />
-                </div>
-                <div className="absolute top-72 right-56">
-                    <Image src={YoutubeLogo} alt="" />
-                </div>
-                <div className="absolute top-20 right-16">
-                    <Image src={LineVerticalImage} alt="" />
-                </div>
-              <h1 className="text-5xl font-extrabold">Ai
-              <span className="image"> Image </span>
-                Generation</h1>
+              <div className="absolute top-96 -z-10">
+                <div className="second__linear__gradient w-[680px] h-[213px] rounded-full"></div>
+              </div>
+              <div className="absolute top-96 -z-20">
+                <div className="circle__iamge bg-center bg-cover w-[682px] h-[407px]"></div>
+              </div>
+              <div className="absolute top-64 left-32">
+                <Lines />
+              </div>
+              <div className="absolute top-72 right-56">
+                <Image src={YoutubeLogo} alt="" />
+              </div>
+              <div className="absolute top-20 right-16">
+                <Image src={LineVerticalImage} alt="" />
+              </div>
+              <h1 className="text-5xl font-extrabold">
+                Ai
+                <span className="image"> Image </span>
+                Generation
+              </h1>
               <p className="text-gray200 text-base">
                 You can give it prompts, and it uses AI to generate images
               </p>
@@ -106,22 +122,28 @@ export default function HomePage() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="flex flex-col items-center gap-3 pt-20">
-                <div className="absolute top-64 left-32">
-                    <Lines />
-                </div>
-                <div className="absolute top-72 right-56">
-                    <Image src={YoutubeLogo} alt="" />
-                </div>
-                <div className="absolute top-20 right-16">
-                    <Image src={LineVerticalImage} alt="" />
-                </div>
-              <h1 className="text-5xl font-extrabold">Transcribe
-              <span className="voice">
-              &#160;Voice 
-              </span>
-               -Notes</h1>
+              <div className="absolute top-96 -z-10">
+                <div className="third__linear__gradient w-[680px] h-[213px] rounded-full"></div>
+              </div>
+              <div className="absolute top-96 -z-20">
+                <div className="circle__iamge bg-center bg-cover w-[682px] h-[407px]"></div>
+              </div>
+              <div className="absolute top-64 left-32">
+                <Lines />
+              </div>
+              <div className="absolute top-72 right-56">
+                <Image src={YoutubeLogo} alt="" />
+              </div>
+              <div className="absolute top-20 right-16">
+                <Image src={LineVerticalImage} alt="" />
+              </div>
+              <h1 className="text-5xl font-extrabold">
+                Transcribe
+                <span className="voice">&#160;Voice</span>
+                -Notes
+              </h1>
               <p className="text-gray200 text-base">
-              You can send voice notes, and it will transcribe them
+                You can send voice notes, and it will transcribe them
               </p>
               <button className="flex items-center gap-3 whatsapp__btn3 px-5 py-2.5 rounded-sm">
                 <Image src={Whatsap} alt="" />

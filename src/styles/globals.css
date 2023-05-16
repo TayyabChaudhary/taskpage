@@ -100,3 +100,31 @@ body {
 .swiper-button-prev::after {
   display: none;
 }
+
+
+.first__linear__gradient {
+  background: linear-gradient(145.4deg, #FF6C96 -29.84%, #8981FE 100.45%);
+  opacity: 0.8;
+  filter: blur(74px);
+  -webkit-filter: blur(74px);
+}
+.second__linear__gradient {
+  background:linear-gradient(93.57deg, #EF3A33 16.56%, #FED03C 91.12%);
+  opacity: 0.8;
+  filter: blur(74px);
+  -webkit-filter: blur(74px);
+}
+.third__linear__gradient {
+  background: linear-gradient(145.4deg, #00FF4F -29.84%, #04586F 100.45%);
+  opacity: 0.8;
+  filter: blur(74px);
+  -webkit-filter: blur(74px);
+}
+
+.circle__iamge{
+  background-image: url('../assets/images/others/circle.png');
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #fff!important;
+}
